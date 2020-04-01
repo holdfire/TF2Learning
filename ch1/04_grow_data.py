@@ -59,5 +59,5 @@ line.set_global_opts(title_opts=opts.TitleOpts(title="新增确诊病例", subti
                      yaxis_opts=opts.AxisOpts(max_=16000, min_=1, type_="log",    #坐标轴配置项
                                               splitline_opts=opts.SplitLineOpts(is_show=True),#分割线配置项
                                               axisline_opts=opts.AxisLineOpts(is_show=True)))#坐标轴刻度线配置项
-line.render(path='/home/aistudio/data/新增确诊趋势图.html')
+line.render(path='./data/新增确诊趋势图.html')
 

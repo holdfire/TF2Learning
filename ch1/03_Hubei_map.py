@@ -11,7 +11,7 @@ with open(datafile, 'r', encoding='UTF-8') as file:
 
 # 分析湖北省实时确诊数据
 # 读入规范化的城市名称，用于规范化丁香园数据中的城市简称
-with open('/home/aistudio/data/data24815/pycharts_city.txt', 'r', encoding='UTF-8') as f:
+with open('./data/pycharts_city.txt', 'r', encoding='UTF-8') as f:
     defined_cities = [line.strip() for line in f.readlines()]
 
 
@@ -56,4 +56,4 @@ m.set_global_opts(title_opts=opts.TitleOpts(title='湖北省实时确诊数据',
                   visualmap_opts=opts.VisualMapOpts(pieces=pieces,
                                                     is_piecewise=True,
                                                     is_show=True))
-m.render(path='/home/aistudio/data/湖北省实时确诊数据.html')
+m.render(path='./data/湖北省实时确诊数据.html')
