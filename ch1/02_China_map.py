@@ -44,4 +44,4 @@ m.set_global_opts(title_opts=opts.TitleOpts(title='全国实时确诊数据',
                                                     is_piecewise=True,   #是否为分段型
                                                     is_show=True))       #是否显示视觉映射配置
 #render（）会生成本地 HTML 文件，默认会在当前目录生成 render.html 文件，也可以传入路径参数，如 m.render("mycharts.html")
-m.render(path='/home/aistudio/data/全国实时确诊数据.html')
+m.render(path='./data/全国实时确诊数据.html')
